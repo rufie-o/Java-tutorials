@@ -22,5 +22,18 @@ class BicycleDemo {
         bike2.printStates();
         System.out.println(bike1.type);
         System.out.println(bike2.type);
+        
+        System.out.println("bike1 instanceof MountainBike: "
+        + (bike1 instanceof MountainBike));
+
+        System.out.println("bike2 instanceof Bicycle: "
+        + (bike2 instanceof Bicycle));
+
+        System.out.println("bike2 instanceof MountainBike: "
+        + (bike2 instanceof MountainBike));
+
+        System.out.println("bike2 instanceof IntBicycle: "
+        + (bike2 instanceof IntBicycle));
+
     }
 }
