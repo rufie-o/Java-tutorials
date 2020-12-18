@@ -1,10 +1,13 @@
-class BicycleDemo {
-    public static void main(String[] args) {
+package bicycle;
 
+public class BicycleDemo {
+    
+    //public void runDemo() {
+    public static void main(String[] args) {
         // Create two different
         // Bicycle objects
         Bicycle bike1 = new Bicycle();
-        Bicycle bike2 = new MountainBike();
+        MountainBike bike2 = new MountainBike();
 
         // Invoke methods on
         // those objects
@@ -22,6 +25,8 @@ class BicycleDemo {
         bike2.printStates();
         System.out.println(bike1.type);
         System.out.println(bike2.type);
+        // bike2.giveName("John Doe");
+        // System.out.println(bike2.bikeName);
         
         System.out.println("bike1 instanceof MountainBike: "
         + (bike1 instanceof MountainBike));

@@ -1,7 +1,8 @@
+package bitwise;
 
-class PrePostDemo {
+public class BinaryMask {
 
-    public static void main(String[] args) {
+    public void runDemo() {
         int bitmask = 0xF11F;
         int val = 0xF223;
         // prints "2"

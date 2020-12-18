@@ -1,3 +1,5 @@
+package bicycle;
+
 interface IntBicycle {
 
     // wheel revolutions per minute
@@ -18,6 +20,12 @@ public class Bicycle implements IntBicycle {
     int gear = 1;
     String type = "Bike";
 
+    // Constructor
+    public void bicycle(){
+
+        System.out.println("test");
+    }
+
     public void changeCadence(int newValue) {
         cadence = newValue;
     }
@@ -36,21 +44,5 @@ public class Bicycle implements IntBicycle {
 
     void printStates() {
         System.out.println("cadence:" + cadence + " speed:" + speed + " gear:" + gear);
-    }
-}
-
-class MountainBike extends Bicycle {
-
-    // new fields and methods defining
-    // a mountain bike would go here
-    String type = "Mountain bike";
-    String bikeName = "";
-
-    public void giveName(String name){
-        bikeName = name;
-    }
-
-    void printStates() {
-        System.out.println("cadence:" + cadence + " speed:" + speed + " gear:" + gear + " name:" +bikeName);
     }
 }
